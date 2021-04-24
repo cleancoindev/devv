@@ -1,5 +1,5 @@
 default:build
 
 build:
-	docker build -t isjavi-devv-node:latest -t isjavi-devv-node:lts ./docker/node
+	docker build -t isjavi-ddev-node:latest ./docker/node
 

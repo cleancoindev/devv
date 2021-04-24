@@ -1,19 +1,19 @@
 {
-  "name": "@itsjavi/devv",
+  "name": "@itsjavi/ddev",
   "version": "1.0.0",
   "description": "Package managers dockerized out of the box",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsjavi/devv.git"
+    "url": "git+https://github.com/itsjavi/ddev.git"
   },
   "author": "Javi Aguilar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/itsjavi/devv/issues"
+    "url": "https://github.com/itsjavi/ddev/issues"
   },
-  "homepage": "https://github.com/itsjavi/devv#readme",
+  "homepage": "https://github.com/itsjavi/ddev#readme",
   "bin": {
-    "devv": "./bin/devv",
-    "devv-init": "./bin/devv-init"
+    "ddev": "./bin/ddev",
+    "ddev-init": "./bin/ddev-init"
   }
 }
