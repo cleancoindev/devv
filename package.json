@@ -1,0 +1,15 @@
+{
+  "name": "@itsjavi/devon",
+  "version": "1.0.0",
+  "description": "Package managers dockerized out of the box",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsjavi/devon.git"
+  },
+  "author": "Javi Aguilar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsjavi/devon/issues"
+  },
+  "homepage": "https://github.com/itsjavi/devon#readme"
+}
