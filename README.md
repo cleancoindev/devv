@@ -1,19 +1,39 @@
-# devon
+# devv
 
-Develop-On is a Docker-based tool to allow developers running app maintenance scripts inside containers.
+`devv` is a Docker-based tool to allow developers running app maintenance scripts inside containers.
 
-Supports:
+When you run `devv [IMAGE] [COMMAND]` in your current directory, it will mount it
+as delegated volume, together with some of your `$HOME` files(*) and folders needed
+to run tasks like `git push`, `npm publish`, `composer install`, etc. which usually require
+credentials.
+
+(*) *Mounts (read-only): `~/.ssh`, `~/.npmrc`, `~/.composer/auth.json`, `~/.gitconfig`, `~/.gitignore_global`*
+
+## Features
+Supported Languages and Tools:
+
 - Node / npm
-- PHP / composer
+- PHP / composer (planned)
 
+## Setup
 
-Once you include the `./bin` directory in your PATH variable, e.g. in your `~/.zshrc` file:
-```bash
-export PATH="path-to-devon/bin:$PATH"
 ```
-then, you can run any container from your current directory like `devon npm run build`, which is an alias of
-`devon node npm run build`. 
+npm i -g git+https://github.com/itsjavi/devv.git
+```
 
-The `devon` command will mount your current directory as delegated volume with some
-relevant dot files (.ssh folder, .gitconfig, .composer/auth.json, etc) that might be needed 
-to run tasks like `git push`, `npm publish`, `composer install`, etc.
+## Usage
+
+### Node (LTS)
+
+```bash
+
+# Run any command (e.g. "devv node ls -la" OR "devv node node index.js")
+devv node [COMMAND]
+
+# Alias for "devv node npm"
+devv npm [NPM-COMMAND]
+
+# Alias for "devv node npm run"
+devv npmr [NPM-SCRIPT]
+```
+
