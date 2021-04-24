@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/itsjavi/devon/issues"
   },
-  "homepage": "https://github.com/itsjavi/devon#readme"
+  "homepage": "https://github.com/itsjavi/devon#readme",
+  "bin": {
+    "devon": "./bin/devon"
+  }
 }
