@@ -1,8 +1,8 @@
-# ddev
+# devv
 
-`ddev` is a Docker-based tool to allow developers running app maintenance scripts inside containers.
+`devv` is a Docker-based tool to allow developers running app maintenance scripts inside containers.
 
-When you run `ddev [IMAGE] [COMMAND]` in your current directory, it will mount it
+When you run `devv [IMAGE] [COMMAND]` in your current directory, it will mount it
 as delegated volume, together with some of your `$HOME` files(*) and folders needed
 to run tasks like `git push`, `npm publish`, `composer install`, etc. which usually require
 credentials.
@@ -13,8 +13,8 @@ credentials.
 ## Setup
 
 ```
-npm i -g git+https://github.com/itsjavi/ddev.git && \
-ddev-init
+npm i -g @itsjavi/devv && \
+devv-init
 ```
 
 ## Supported Languages
@@ -37,16 +37,16 @@ PHP & composer:
 
 ```bash
 # Usage template:
-ddev [LANG]:[VERSION] [COMMAND] [...PARAMETERS]
+devv [LANG]:[VERSION] [COMMAND] [...PARAMETERS]
 ```
 
 ```bash
 # Examples:
-ddev node:16 node --version
-ddev node npm install
-ddev npm install
+devv node:16 node --version
+devv node npm install
+devv npm install
 
-ddev php:8 php --ini
-ddev php composer install
-ddev composer install
+devv php:8 php --ini
+devv php composer install
+devv composer install
 ```
