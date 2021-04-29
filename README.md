@@ -7,7 +7,7 @@ as delegated volume, together with some of your `$HOME` files(*) and folders nee
 to run tasks like `git push`, `npm publish`, `composer install`, etc. which usually require
 credentials.
 
-(*) *Mounts (read-only): `~/.ssh`, `~/.npmrc`, `~/.composer/auth.json`, `~/.gitconfig`, `~/.gitignore_global`*
+(*) *From your $HOME, it only mounts the following (read-only): `~/.ssh`, `~/.npmrc`, `~/.composer/auth.json`, `~/.gitconfig`, `~/.gitignore_global`*
 
 
 ## Setup
