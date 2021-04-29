@@ -9,11 +9,6 @@ credentials.
 
 (*) *Mounts (read-only): `~/.ssh`, `~/.npmrc`, `~/.composer/auth.json`, `~/.gitconfig`, `~/.gitignore_global`*
 
-## Features
-Supported Languages and Tools:
-
-- Node / npm
-- PHP / composer (planned)
 
 ## Setup
 
@@ -22,18 +17,36 @@ npm i -g git+https://github.com/itsjavi/ddev.git && \
 ddev-init
 ```
 
+## Supported Languages
+
+Node & npm:
+- `node`
+- `node:15`
+- `node:16`
+- `node:latest`
+- `npm` (runs on `node:latest`)
+
+PHP & composer: 
+- `php`
+- `php:7`
+- `php:8`
+- `php:latest`
+- `composer` (runs on `php:latest`)
+
 ## Usage
 
-### Node (LTS)
+```bash
+# Usage template:
+ddev [LANG]:[VERSION] [COMMAND] [...PARAMETERS]
+```
 
 ```bash
+# Examples:
+ddev node:16 node --version
+ddev node npm install
+ddev npm install
 
-# Run any command (e.g. "ddev node ls -la" OR "ddev node node index.js")
-ddev node [COMMAND]
-
-# Alias for "ddev node npm"
-ddev npm [NPM-COMMAND]
-
-# Alias for "ddev node npm run"
-ddev npmr [NPM-SCRIPT]
+ddev php:8 php --ini
+ddev php composer install
+ddev composer install
 ```
