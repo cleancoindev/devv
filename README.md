@@ -55,4 +55,7 @@ devv npm install
 devv php:8 php --ini
 devv php composer install
 devv composer install
+
+# Running phpunit with code coverage:
+devv php:7-xdebug XDEBUG_MODE=coverage vendor/bin/phpunit
 ```
