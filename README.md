@@ -21,6 +21,8 @@ npm i -g @itsjavi/devv && \
 devv-init
 ```
 
+The Docker images are built by you, so you can customize this project to your needs and run `devv-init` every time you need.
+
 ## Supported Languages
 
 Node & npm:
