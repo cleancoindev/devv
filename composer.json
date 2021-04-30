@@ -1,0 +1,22 @@
+{
+  "name": "itsjavi/devv",
+  "description": "Zero-config local development dockerization of programming languages and their package managers",
+  "keywords": [
+    "dev",
+    "local-dev",
+    "docker",
+    "php",
+    "node",
+    "npm",
+    "composer",
+    "golang",
+    "go"
+  ],
+  "type": "project",
+  "license": "MIT",
+  "require": {},
+  "bin": [
+    "./bin/devv",
+    "./bin/devv-init"
+  ]
+}
