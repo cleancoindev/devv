@@ -1,6 +1,6 @@
 {
   "name": "@itsjavi/devv",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Zero-config local development dockerization of programming languages and their package managers",
   "keywords": [
     "dev",
