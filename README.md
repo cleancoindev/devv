@@ -1,6 +1,6 @@
 # devv
 
-`devv` is a Docker-based tool to allow developers running app maintenance scripts inside containers.
+`devv` is a zero-config Docker-based tool to allow developers running app maintenance scripts inside containers, without writing a single line of Dockerfile. This is useful specially to run command-line tools, you won't need to have your own docker files to do that.
 
 When you run `devv [IMAGE] [COMMAND]` in your current directory, it will mount it
 as delegated volume, together with some of your `$HOME` files(*) and folders needed
@@ -11,6 +11,10 @@ credentials.
 
 
 ## Setup
+
+You can clone this repository and run `bin/devv-init`, then you will have to manually config the `bin` directory in your `$PATH` variable to have `devv` available everywhere.
+
+Alternatively, if you have node installed in your OS, you can install it globally with `npm`.
 
 ```
 npm i -g @itsjavi/devv && \
